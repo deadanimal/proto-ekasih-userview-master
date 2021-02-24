@@ -1,0 +1,252 @@
+<div class="header pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-xl-12 col-7">
+                    <h6 class="h2 text-dark d-inline-block mb-0"> Kemaskini Maklumat Bantuan </h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="fas fa-user-edit text-dark"> </i> </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="text-dark"> Kemaskini Profil KIR </a>
+                            </li>
+                            <li aria-current="page" class="breadcrumb-item active">
+                                Kemaskini Maklumat Bantuan
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <!-- <div class="col-lg-6 col-5 text-right">
+					<a class="btn btn-sm btn-default text-white" (click)="openModal(createUser)">
+						Create
+					</a>
+				</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col-12 col-xl-18">
+            <div class="card card-body bg-white border-light shadow-sm mb-4">
+                <h2 class="h5 mb-4">Kemaskini Maklumat Bantuan</h2>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label for="first_name">Nama</label>
+                                <input class="form-control" id="first_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label for="last_name">No. KP Ketua Isi Rumah (KIR)</label>
+                                <input class="form-control" id="last_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div>
+                                <label for="first_name">Jumlah Pendapatan Kasar Isi Rumah dalam Setahun</label>
+                                <input class="form-control" id="first_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label for="first_name">Pendapatan Per Kapita</label>
+                                <input class="form-control" id="first_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label for="last_name">Jumlah Ahli Isi Rumah (termasuk KIR)</label>
+                                <input class="form-control" id="last_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                          <label for="gender">Status Miskin</label>
+                          <select class="form-select mb-0" id="gender" aria-label="Gender select example">
+                              <option selected>--</option>
+                              <option value="1">Female</option>
+                              <option value="2">Male</option>
+                          </select>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                          <label for="gender">Status Pendapatan KIR</label>
+                          <select class="form-select mb-0" id="gender" aria-label="Gender select example">
+                              <option selected>--</option>
+                              <option value="1">Female</option>
+                              <option value="2">Male</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label for="first_name">Sebab Terkeluar</label>
+                                <input class="form-control" id="first_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label for="last_name">Catatan Untuk Sebab Terkeluar/Ditolak</label>
+                                <input class="form-control" id="last_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12 mb-3 text-right">
+                            <div>
+                                <button type="submit" class="btn btn-success" (click)="successSwal()">Simpan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+
+
+
+                    <div class="button-center mt-3">
+                        <button type="submit" class="btn btn-default" (click)="lgModal(viewData)">Jenis Bantuan/Pinjaman/Projek/Program Yang Diterima Oleh KIR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<ng-template #viewData>
+    <div class=" modal-header bg-secondary ">
+        <!-- <h6 class=" modal-title text-white" id="modal-title-default">
+            Generate Invoice
+        </h6> -->
+        <div class="img-center">
+            <img alt="Image placeholder" style="height: auto; width: 30%;" src="/assets/img/theme/team-2.jpg">
+        </div>
+        
+        
+        <button
+          aria-label="Close"
+          class=" close"
+          data-dismiss="modal"
+          type="button"
+          (click)="largemodal.hide()"
+        >
+          <span class="text-dark" aria-hidden="true"> × </span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <div class="col-xl-12">
+            <div class="card">
+                <!-- <div class="card-header bg-default">
+                    <h3 class="m-0 text-white"> Client List </h3>
+                </div> -->
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-centered table-nowrap mb-0 rounded">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>AGENSI</th>
+                                    <th>KOD AGENSI</th>
+                                    <th>PROGRAM</th>
+                                    <th>KOD PROGRAM</th>
+                                    <th>TARIKH</th>
+                                    <th>JUMLAH (RM)</th>
+                                    <th> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <!-- Item -->
+                                <tr>
+                                    <td>ABC</td>
+                                    <td>WQ2354</td>
+                                    <td>DEF</td>
+                                    <td>YT8364</td>
+                                    <td>23/12/2018</td>
+                                    <td>2345.98</td>
+                                    <td><a href="#" class="btn btn-sm btn-tertiary" data-toggle="modal" data-target="#modal-edit">Kemaskini</a>
+                                    <a href="#" class="btn btn-sm btn-danger">Padam</a></td>
+                                </tr>
+                                <!-- Item -->
+                                <tr>
+                                    <td>ABC</td>
+                                    <td>WQ2354</td>
+                                    <td>DEF</td>
+                                    <td>YT8364</td>
+                                    <td>23/12/2018</td>
+                                    <td>2345.98</td>
+                                    <td><a href="#" class="btn btn-sm btn-tertiary" data-toggle="modal" data-target="#modal-edit">Kemaskini</a>
+                                    <a href="#" class="btn btn-sm btn-danger">Padam</a></td>
+                                </tr>
+                                <!-- Item -->
+                                <tr>
+                                    <td>ABC</td>
+                                    <td>WQ2354</td>
+                                    <td>DEF</td>
+                                    <td>YT8364</td>
+                                    <td>23/12/2018</td>
+                                    <td>2345.98</td>
+                                    <td><a href="#" class="btn btn-sm btn-tertiary" data-toggle="modal" data-target="#modal-edit">Kemaskini</a>
+                                    <a href="#" class="btn btn-sm btn-danger">Padam</a></td>
+                                </tr>
+                                <!-- Item -->
+                                <tr>
+                                    <td>ABC</td>
+                                    <td>WQ2354</td>
+                                    <td>DEF</td>
+                                    <td>YT8364</td>
+                                    <td>23/12/2018</td>
+                                    <td>2345.98</td>
+                                    <td><a href="#" class="btn btn-sm btn-tertiary" data-toggle="modal" data-target="#modal-edit">Kemaskini</a>
+                                    <a href="#" class="btn btn-sm btn-danger">Padam</a></td>
+                                </tr>
+                                <!-- Item -->
+                                <tr>
+                                    <td>ABC</td>
+                                    <td>WQ2354</td>
+                                    <td>DEF</td>
+                                    <td>YT8364</td>
+                                    <td>23/12/2018</td>
+                                    <td>2345.98</td>
+                                    <td><a href="#" class="btn btn-sm btn-tertiary" data-toggle="modal" data-target="#modal-edit">Kemaskini</a>
+                                    <a href="#" class="btn btn-sm btn-danger">Padam</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" modal-footer">
+        <!-- <button 
+            class=" btn btn-default text-white" 
+            type="button" 
+            class="btn btn-success"
+            (click)="successSwalLargeModal()"
+        >
+            Generate
+        </button> -->
+        <button
+            class=" btn btn-link btn-danger ml-auto text-white"
+            data-dismiss="modal"
+            type="button"
+            (click)="largemodal.hide()"
+        >
+            Tutup
+        </button>
+	</div>
+</ng-template>

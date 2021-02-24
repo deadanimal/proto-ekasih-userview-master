@@ -1,0 +1,205 @@
+<div class="header pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-xl-12 col-7">
+                    <h6 class="h2 text-dark d-inline-block mb-0"> Kemaskini Rekod </h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="fas fa-user-alt text-dark"> </i> </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="text-dark"> Profil Bantuan </a>
+                            </li>
+                            <li aria-current="page" class="breadcrumb-item active">
+                                Kemaskini Rekod
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <!-- <div class="col-lg-6 col-5 text-right">
+					<a class="btn btn-sm btn-default text-white" (click)="openModal(createUser)">
+						Create
+					</a>
+				</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col-12 mb-4">
+
+
+            <div class="col-12 mb-4">
+                <div class="card border-light shadow-sm mb-4">
+                    <div class="card-header">
+                        <h2 class="h6 modal-title">Kemaskini Rekod</h2>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                            <div class="col-6">
+                            <div class="mb-4">
+                                <label for="jenis">Nama Agensi</label>
+                                <input type="text" class="form-control" placeholder=" " id="jenis">
+                            </div></div>
+                            <div class="col-6">
+                            <div class="mb-4">
+                                <label for="jenis">Kategori Bantuan</label>
+                                <br>
+                                <select class="form-select" id="from2" aria-label="Default select example">
+                                    <option selected>--</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div></div>
+
+                            </div>
+                        </form>
+
+                        <div class="col-12 text-right">
+                            <button class="btn btn-sm btn-success" type="button" (click)="lgModal(viewData)">Cari</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #viewData>
+    <div class=" modal-header bg-default ">
+        <!-- <h6 class=" modal-title text-white" id="modal-title-default">
+            Generate Invoice
+        </h6> -->
+  
+        <button
+          aria-label="Close"
+          class=" close"
+          data-dismiss="modal"
+          type="button"
+          (click)="largemodal.hide()"
+        >
+          <span class="text-white" aria-hidden="true"> × </span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <div class="col-xl-12">
+            <div class="card">
+                <!-- <div class="card-header bg-default">
+                    <h3 class="m-0 text-white"> Client List </h3>
+                </div> -->
+                <div class="card-body">
+                    <div class="dataTables_wrapper py-4">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-6">
+                            <div class="dataTables_length" id="datatable_length">
+                              <label>
+                                Tunjuk
+                                <select
+                                  name="datatable_length"
+                                  aria-controls="datatable"
+                                  class="form-control form-control-sm"
+                                  (change)="entriesChange($event)"
+                                >
+                                  <option value="5" [selected]="entries==5">5</option>
+                                  <option value="10" [selected]="entries==10">10</option>
+                                  <option value="15" [selected]="entries==15">15</option>
+                                  <option value="-1" [selected]="entries==-1">All</option>
+                                </select>
+                                <!-- entries -->
+                                </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-12 col-md-6">
+                            <div id="datatable_filter" class="dataTables_filter">
+                              <label>
+                                <input
+                                  type="search"
+                                  class="form-control form-control-sm"
+                                  placeholder="Cari rekod"
+                                  aria-controls="datatable"
+                                  (keyup)="filterTable($event)"
+                                />
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <ngx-datatable
+                          class="bootstrap selection-cell"
+                          [columnMode]="'force'"
+                          [headerHeight]="50"
+                          [footerHeight]="50"
+                          [rowHeight]="'auto'"
+                          [limit]="entries != -1 ? entries:undefined"
+                          [rows]="temp"
+                          
+                        >
+                    
+                            <ngx-datatable-column name="Nama Agensi" >
+                                <ng-template let-row="row" ngx-datatable-cell-template>
+                                {{row.office}}
+                                </ng-template>
+                            </ngx-datatable-column>
+                            <ngx-datatable-column name="Kategori Bantuan" >
+                                <ng-template let-row="row" ngx-datatable-cell-template>
+                                {{row.clientId}}
+                                </ng-template>
+                            </ngx-datatable-column>
+                            <ngx-datatable-column name="Nama Program" >
+                                <ng-template let-row="row" ngx-datatable-cell-template>
+                                {{row.typeDoc}}
+                                </ng-template>
+                            </ngx-datatable-column>
+                            <ngx-datatable-column name="Penyelaras" >
+                                <ng-template let-row="row" ngx-datatable-cell-template>
+                                {{row.name}}
+                                </ng-template>
+                            </ngx-datatable-column>
+                            <ngx-datatable-column name="Action">
+                                <ng-template let-row="row" ngx-datatable-cell-template>
+                                    <!-- <button class=" btn btn-icon btn-danger btn-sm" type="button" title="Action" (click)="openModal(viewAction)">
+                                        <span class=" btn-inner--icon"> <i class=" fas fa-file-pdf"> </i> </span>
+                                    </button> -->
+                                    <button class=" btn btn-icon btn-default btn-sm" type="button" title="Lihat">
+                                        <span class=" btn-inner--icon"> <i class=" far fa-eye"> </i> </span>
+                                    </button>
+                                    <button class=" btn btn-icon btn-success btn-sm" type="button" title="Edit">
+                                        <span class=" btn-inner--icon"> <i class=" fas fa-edit"> </i> </span>
+                                    </button>
+                                </ng-template>
+                            </ngx-datatable-column>
+                        </ngx-datatable>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" modal-footer">
+        <!-- <button 
+            class=" btn btn-default text-white" 
+            type="button" 
+            class="btn btn-success"
+            (click)="successSwalLargeModal()"
+        >
+            Generate
+        </button> -->
+        <button
+            class=" btn btn-link btn-danger ml-auto text-white"
+            data-dismiss="modal"
+            type="button"
+            (click)="largemodal.hide()"
+        >
+            Tutup
+        </button>
+	</div>
+</ng-template>

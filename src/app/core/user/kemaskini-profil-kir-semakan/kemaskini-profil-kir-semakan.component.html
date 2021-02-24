@@ -1,0 +1,253 @@
+<div class="header pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-xl-12 col-7">
+                    <h6 class="h2 text-dark d-inline-block mb-0"> Semakan </h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="fas fa-user-edit text-dark"> </i> </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="text-dark"> Kemaskini Profil KIR </a>
+                            </li>
+                            <li aria-current="page" class="breadcrumb-item active">
+                                Semakan
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <!-- <div class="col-lg-6 col-5 text-right">
+					<a class="btn btn-sm btn-default text-white" (click)="openModal(createUser)">
+						Create
+					</a>
+				</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card border-light shadow-sm">
+                <div class="col-12 mb-4">
+                    <div class="card border-light shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="modal-content">
+                                <div class="modal-header bg-secondary text-black mb-1">
+                                    <h2 class="h6 modal-title">Semakan</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                        <div class="col-6">
+                                        <div class="mb-4">
+                                            <label for="jenis">Nama</label>
+                                            <input type="text" class="form-control" placeholder=" " id="jenis">
+                                        </div></div>
+                                        <div class="col-6">
+                                        <div class="mb-4">
+                                            <label for="jenis">No. KP</label>
+                                            <input type="text" class="form-control" placeholder=" " id="jenis">
+                                        </div></div>
+                                        <div class="col-6">
+                                        <div class="mb-4">
+                                            </div></div>
+                                        </div>
+                                    </form>
+
+                                    <form>
+                                        <div class="row">
+                                        <div class="col-4">
+                                        <div class="mb-4">
+                                            <span class="h6 font-weight-bold">Sila Pilih:</span>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                                            <label class="form-check-label" for="defaultCheck10">
+                                                eKasih
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                                            <label class="form-check-label" for="defaultCheck10">
+                                                Penerima Bantuan
+                                            </label>
+                                        </div>
+                                        </div></div>
+                                        <div class="col-4">
+                                        <div class="mb-4">
+                                            <label for="from2">Kumpulan</label>
+                                            <br>
+                                            <select class="form-select" id="from2" aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div></div>
+                                        <div class="col-4">
+                                        <div class="mb-4">
+                                            <label for="from2">Sumber Profail</label>
+                                            <br>
+                                            <select class="form-select" id="from2" aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="col-12 text-right">
+                                        <a href="#" class="btn btn-sm btn-success">Cari</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  mb-4">
+                    <div class="card border-light shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-centered table-nowrap mb-0 rounded">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>NAMA</th>
+                                        <th>NO. KP</th>
+                                        <th>STATUS<br> MISKIN</th>
+                                        <th>NEGERI</th>
+                                        <th>DAERAH</th>
+                                        <th>PARLIMEN</th>
+                                        <th>DUN</th>
+                                        <th>ALAMAT 1</th>
+                                        <th>ALAMAT 2</th>
+                                        <th>ALAMAT 3</th>
+                                        <th> </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td>Ahmad</td>
+                                        <td>561111-11-1111</td>
+                                        <td>Miskin</td>
+                                        <td>Selangor</td>
+                                        <td>Petaling</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td><a href="#" class="btn btn-sm btn-tertiary" data-toggle="modal" data-target="#modal-edit">Lihat</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Kemaskini</a>
+                                        <a href="#" class="btn btn-sm btn-success">Excel</a></td>
+                                    </tr>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td>Ahmad</td>
+                                        <td>561111-11-1111</td>
+                                        <td>Miskin</td>
+                                        <td>Selangor</td>
+                                        <td>Petaling</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td><a href="#" class="btn btn-sm btn-tertiary" data-toggle="modal" data-target="#modal-edit">Lihat</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Kemaskini</a>
+                                        <a href="#" class="btn btn-sm btn-success">Excel</a></td>
+                                    </tr>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td>Ahmad</td>
+                                        <td>561111-11-1111</td>
+                                        <td>Miskin</td>
+                                        <td>Selangor</td>
+                                        <td>Petaling</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td><a href="#" class="btn btn-sm btn-tertiary" data-toggle="modal" data-target="#modal-edit">Lihat</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Kemaskini</a>
+                                        <a href="#" class="btn btn-sm btn-success">Excel</a></td>
+                                    </tr>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td>Ahmad</td>
+                                        <td>561111-11-1111</td>
+                                        <td>Miskin</td>
+                                        <td>Selangor</td>
+                                        <td>Petaling</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td><a href="#" class="btn btn-sm btn-tertiary" data-toggle="modal" data-target="#modal-edit">Lihat</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Kemaskini</a>
+                                        <a href="#" class="btn btn-sm btn-success">Excel</a></td>
+                                    </tr>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td>Ahmad</td>
+                                        <td>561111-11-1111</td>
+                                        <td>Miskin</td>
+                                        <td>Selangor</td>
+                                        <td>Petaling</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td>xx</td>
+                                        <td><a href="#" class="btn btn-sm btn-tertiary" data-toggle="modal" data-target="#modal-edit">Lihat</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Kemaskini</a>
+                                        <a href="#" class="btn btn-sm btn-success">Excel</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="card-footer px-3 border-0 d-flex align-items-center justify-content-between">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination mb-0">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Kembali</a>
+                                        </li>
+                                        <li class="page-item  active">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Seterusnya</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

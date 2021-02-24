@@ -1,0 +1,2335 @@
+<div class="header pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-xl-12 col-7">
+                    <h6 class="h2 text-dark d-inline-block mb-0"> Kemiskinan (Terperinci) </h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="fas fa-edit text-dark"> </i> </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="text-dark"> Pendaftaran </a>
+                            </li>
+                            <li aria-current="page" class="breadcrumb-item active">
+                                Kemiskinan (Terperinci)
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <!-- <div class="col-lg-6 col-5 text-right">
+					<a class="btn btn-sm btn-default text-white" (click)="openModal(createUser)">
+						Create
+					</a>
+				</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <mat-horizontal-stepper #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+                <!-- <ng-template matStepLabel> Overview </ng-template> -->
+                <div class="row">
+                    <div class="col-12 col-xl-18">
+                        <div class="card card-body bg-white border-light shadow-sm mb-4">
+                            <h2 class="h3 mb-0">Pendaftaran Terperinci</h2><br>
+                            <h2 class="h4 mb-0"><strong><u>Pengenalan</u></strong></h2>
+                            <h2 class="h6 mb-0">A. BUTIR BUTIR PENGENALAN</h2><br>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <fieldset>
+                                            <label for="last_name">Kategori</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                    Senarai eKasih
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios2" value="option2">
+                                                <label class="form-check-label" for="exampleRadios2">
+                                                    Penerima Bantuan
+                                                </label>
+                                            </div>
+                                            <!-- End of Radio -->
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Sumber Profail</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Kumpulan</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Negeri</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Daerah
+                                                Pentadbiran</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Mukim</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">PBT</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label class="my-1 mr-2" for="country">Bandar</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label class="my-1 mr-2" for="country">Parlimen</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="first_name">DUN</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div><br>
+                                <div class="row">
+
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-file mb-3">
+                                            <input type="file" class="form-file-input" id="customFile">
+                                            <label class="form-file-label" for="customFile">
+                                                <span class="form-file-text">Gambar Ketua Isi Rumah</span>
+                                                <span class="form-file-button">Cari</span>
+                                            </label>
+                                        </div>
+                                        <div class="col text-right">
+                                            <button type="submit" class="btn btn-warning">Muatnaik</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Nama Ketua Isi Rumah (KIR)</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">No. Kad Pengenalan Baru (KIR)</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col text-right">
+                                        <button type="submit" class="btn btn-warning">Semak No. KP</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">No. Kad Pengenalan Lama (KIR)</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Alamat
+                                                Lengkap</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Taman/Kampung</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Bandar</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Poskod</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">No. Telefon (Tetap)</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">No. H/P</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <button mat-button (click)="submit()"> Simpan </button>
+                    <button mat-button matStepperNext> Seterusnya </button>
+                </div>
+            </form>
+        </mat-step>
+
+        <mat-step [stepControl]="secondFormGroup">
+            <!-- <ng-template matStepLabel> Metadata 1 </ng-template> -->
+            <form [formGroup]="secondFormGroup">
+                <div class="row">
+                    <div class="col-12 col-xl-18">
+                        <div class="card card-body bg-white border-light shadow-sm mb-4">
+                            <h2 class="h3 mb-0">Pendaftaran Terperinci</h2><br>
+                            <h2 class="h4 mb-0"><strong><u>Ketua Isi Rumah (KIR)</u></strong></h2>
+                            <h2 class="h6 mb-0">B. BUTIR BUTIR KETUA ISI RUMAH</h2><br>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Tahun Kelahiran</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Umur</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Jantina</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Kumpulan Etnik</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="exampleFormControlTextarea1"
+                                                class="form-label">Kewarganegaraan</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Agama</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Status Perkahwinan</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <div>
+                                            <label class="my-1 mr-2" for="country">Taraf Pendidikan Tertinggi</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong><u>SEKOLAH</u></strong></p>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Negeri</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Daerah</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Nama Sekolah</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <div>
+                                            <label class="my-1 mr-2" for="country">Taraf Sijil Tertinggi</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <div>
+                                                <fieldset>
+                                                    <label for="last_name">Kategori</label>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Mekanik
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Pertukangan perabot
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Membuat batu bata
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Andaman
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Ternakan
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Lain-lain
+                                                        </label>
+                                                    </div>
+                                                    <!-- End of Radio -->
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <fieldset>
+                                                <label for="last_name"> </label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Automotif/Elektronik
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Pertukangan paip
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Kraftangan
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Memasak
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Perikanan
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Tiada Kemahiran
+                                                    </label>
+                                                </div>
+                                                <!-- End of Radio -->
+                                            </fieldset>
+                                            <!-- <div>
+                                                
+                                            </div> -->
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div>
+                                                <fieldset>
+                                                    <label for="last_name"> </label>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Pertukangan rumah
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Membancuh simen
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Menjahit
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Kimpalan
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Pertanian
+                                                        </label>
+                                                    </div>
+                                                    <!-- End of Radio -->
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="row">
+                                    <div class="col-md-9 mb-3">
+                                        <div>
+                                            <label for="last_name">Status Pekerjaan</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <div>
+                                            <label for="last_name">Kod Masco</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <div>
+                                            <label for="last_name">Jika menjawab kod 1 atau 2, nyatakan secara
+                                                terperinci
+                                                tugas/jenis pekerjaan utama yang anda lakukan</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <button mat-button (click)="submit()"> Simpan </button>
+                    <button mat-button matStepperPrevious> Kembali </button>
+                    <button mat-button matStepperNext> Seterusnya </button>
+                </div>
+            </form>
+        </mat-step>
+
+        <mat-step [stepControl]="thirdFormGroup">
+            <!-- <ng-template matStepLabel> Metadata 2 </ng-template> -->
+            <form [formGroup]="thirdFormGroup">
+                <div class="row">
+                    <div class="col-12 col-xl-18">
+                        <div class="card card-body bg-white border-light shadow-sm mb-4">
+                            <h2 class="h3 mb-0">Pendaftaran Terperinci</h2><br>
+                            <h2 class="h6 mb-0">C. PENDAPATAN KETUA ISI RUMAH DALAM TEMPOH 12 BULAN YANG LALU</h2><br>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Jumlah pendapatan pekerjaan bergaji</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Jumlah pendapatan pekerjaan sendiri (bukan
+                                                pertanian)</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Jumlah pendapatan pekerjaan sendiri
+                                                (pertanian)</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Jumlah pendapatan pekerjaan sendiri
+                                                (perikanan)</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Jumlah keluaran sendiri yang digunakan</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Jumlah pendapatan lain diperolehi</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Pendapatan daripada harta</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Kiriman isi rumah lain (dalam dan luar
+                                                negeri)</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Nafkah</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Biasiswa dan dermasiswa</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Pencen</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Hadiah berupa wang tunai atau mata benda</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Pembayaran lain berkala yang diterima</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Jumlah Bantuan (12 bulan sebelum dan sehingga hujung
+                                                tahun
+                                                semasa)</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Jumlah Impak Bantuan</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="first_name">Jumlah Pendapatan Kasar</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder="RM"
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br><br>
+
+                                <div class="d-flex">
+                                    <div class="ml-auto p-2">
+                                        <a class="btn btn-block btn-warning text-white animate-up-1 rounded-bottom">
+                                            Cetak
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Nama/No. KP KIR</label>
+                                            <p>ANSIM BIN ANTAKAG (420222215169)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Jumlah Pendapatan Kasar Isi Rumah Dalam</label>
+                                            <p>RM 2,760.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Pendapatan per Kapita</label>
+                                            <p>RM 230.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Jumlah Ahli Isi Rumah (termasuk KIR)</label>
+                                            <p>1</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Status Miskin</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Status
+                                                Pendaftaran
+                                                KIR</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Sebab Terkeluar</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Catatan Untuk Sebab Terkeluar/Ditolak</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <button mat-button (click)="submit()"> Simpan </button>
+                    <button mat-button matStepperPrevious> Kembali </button>
+                    <button mat-button matStepperNext> Seterusnya </button>
+                </div>
+            </form>
+        </mat-step>
+
+        <mat-step [stepControl]="forthFormGroup">
+            <!-- <ng-template matStepLabel> Metadata 3 </ng-template> -->
+            <form [formGroup]="forthFormGroup">
+                <div class="row">
+                    <div class="col-12 col-xl-18">
+                        <div class="card card-body bg-white border-light shadow-sm mb-4">
+                            <h2 class="h3 mb-0">Pendaftaran Terperinci</h2><br>
+                            <h2 class="h4 mb-0"><strong><u>Ahli Isi Rumah (AIR)</u></strong></h2>
+                            <h2 class="h6 mb-0">D. BUTIR BUTIR AHLI ISI RUMAH DAN TANGGUNGAN</h2><br>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Nama Ahli Isi Rumah (AIR)</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">No. KP Baru (AIR)</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 mb-3">
+                                        <div>
+                                            <label for="last_name">Perhubungan dengan Ketua Isi Rumah (KIR)</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Tahun Kelahiran</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Umur</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Jantina</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Kumpulan Etnik</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="exampleFormControlTextarea1"
+                                                class="form-label">Kewarganegaraan</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Agama</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Status Perkahwinan</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <div>
+                                            <label class="my-1 mr-2" for="country">Taraf Pendidikan Tertinggi</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong><u>SEKOLAH</u></strong></p>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Negeri</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Daerah</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Nama Sekolah</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <div>
+                                            <label class="my-1 mr-2" for="country">Taraf Sijil Tertinggi</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <fieldset>
+                                                <label for="last_name">Kategori</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Mekanik
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Pertukangan perabot
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Membuat batu bata
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Andaman
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Ternakan
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Lain-lain
+                                                    </label>
+                                                </div>
+                                                <!-- End of Radio -->
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <fieldset>
+                                                <label for="last_name"> </label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Automotif/Elektronik
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Pertukangan paip
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Kraftangan
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Memasak
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Perikanan
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Tiada Kemahiran
+                                                    </label>
+                                                </div>
+                                                <!-- End of Radio -->
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div>
+                                                <fieldset>
+                                                    <label for="last_name"> </label>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Pertukangan rumah
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Membancuh simen
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Menjahit
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Kimpalan
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck10">
+                                                        <label class="form-check-label" for="defaultCheck10">
+                                                            Pertanian
+                                                        </label>
+                                                    </div>
+                                                    <!-- End of Radio -->
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="row">
+                                    <div class="col-md-9 mb-3">
+                                        <div>
+                                            <label for="last_name">Status Pekerjaan</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <div>
+                                            <label for="last_name">Kod Masco</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <div>
+                                            <label for="last_name">Jika menjawab kod 1 atau 2, nyatakan secara
+                                                terperinci tugas/jenis pekerjaan
+                                                utama yang anda lakukan</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <div>
+                                            <label class="my-1 mr-2" for="country">Adakah anda mengidap apa-apa penyakit
+                                                dan mendapat rawatan
+                                                seperti berikut? (jawapan pelbagai)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <div class="table-responsive">
+                                            <table class="table table-centered table-wrap mb-0 rounded">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th> </th>
+                                                        <th>PENYAKIT<br><br></th>
+                                                        <th>RAWATAN<br> KLINIK<br> KERAJAAN</th>
+                                                        <th>RAWATAN<br> KLINIK<br> SWASTA</th>
+                                                        <th>RAWATAN<br> HOSPITAL<br> KERAJAAN</th>
+                                                        <th>RAWATAN<br> HOSPITAL<br> SWASTA</th>
+                                                        <th>RAWATAN<br> SECARA<br> TRADISIONAL</th>
+                                                        <th>TIADA RAWATAN<br><br></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Darah tinggi</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Kencing manis</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Lelah (Asma)</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Buah pinggang</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Barah (Kanser)</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Jantung</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Sakit sendi (gout)</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Celebral palsy (lumpuh otak)</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Strok</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Gastrik</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Batuk/TB</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Lain-lain</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Item -->
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>Tiada penyakit</td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="defaultCheck10">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-3 mb-3">
+                                            <div>
+                                                <fieldset>
+                                                    <label for="last_name">Jenis Kecacatan/Ketidakupayaan (secara
+                                                        pemerhatian, jawapan
+                                                        pelbagai)</label>
+                                                    <!-- End of Radio -->
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <fieldset>
+                                                <label for="last_name"> </label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Pendengaran
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Fizikal
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Pesakit Kronik
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Tiada kecacatan
+                                                    </label>
+                                                </div>
+                                                <!-- End of Radio -->
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <fieldset>
+                                                <label for="last_name"> </label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Penglihatan
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        OKU Terlantar
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Lain-lain
+                                                    </label>
+                                                </div>
+                                                <!-- End of Radio -->
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-3 mb-3">
+                                            <fieldset>
+                                                <label for="last_name">Jika ada kecacatan, adakah sudah didaftarkan
+                                                    di Jabatan Kebajikan
+                                                    Masyarakat sebagai OKU?</label>
+                                                <!-- End of Radio -->
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-2 mb-3">
+                                            <fieldset>
+                                                <label for="last_name"> </label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="exampleRadios" id="exampleRadios1" value="option1"
+                                                        checked>
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        Ya
+                                                    </label>
+                                                </div>
+                                                <!-- End of Radio -->
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-2 mb-3">
+                                            <fieldset>
+                                                <label for="last_name"> </label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="exampleRadios" id="exampleRadios1" value="option1"
+                                                        checked>
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        Tidak
+                                                    </label>
+                                                </div>
+                                                <!-- End of Radio -->
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <div>
+                                                <label for="last_name">No. Daftar OKU</label>
+                                                <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                    required>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-3 mb-3">
+                                            <fieldset>
+                                                <label for="last_name">Simpanan/Pelaburan yang Dimiliki</label>
+                                                <!-- End of Radio -->
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <fieldset>
+                                                <label for="last_name"> </label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Tabung Haji
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        ASN
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Koperasi
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Dana Negeri
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Tiada simpanan/Pelaburan
+                                                    </label>
+                                                </div>
+                                                <!-- End of Radio -->
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <fieldset>
+                                                <label for="last_name"> </label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        ASB
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Bank
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Amanah Saham Negeri
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="defaultCheck10">
+                                                    <label class="form-check-label" for="defaultCheck10">
+                                                        Lain-lain
+                                                    </label>
+                                                </div>
+                                                <!-- End of Radio -->
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <button mat-button (click)="submit()"> Simpan </button>
+                    <button mat-button matStepperPrevious> Kembali </button>
+                    <button mat-button matStepperNext> Seterusnya </button>
+                </div>
+            </form>
+        </mat-step>
+
+        <mat-step [stepControl]="fifthFormGroup">
+            <form [formGroup]="fifthFormGroup">
+                <!-- <ng-template matStepLabel> Signature </ng-template> -->
+                <div class="row">
+                    <div class="col-12 col-xl-18">
+                        <div class="card card-body bg-white border-light shadow-sm mb-4">
+                            <h2 class="h3 mb-0">Pendaftaran Terperinci</h2><br>
+                            <h2 class="h4 mb-0"><strong><u>Pengenalan</u></strong></h2>
+                            <h2 class="h6 mb-0">A. BUTIR BUTIR PENGENALAN</h2><br>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <fieldset>
+                                            <label for="last_name">Kategori</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                    Senarai eKasih
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                    id="exampleRadios2" value="option2">
+                                                <label class="form-check-label" for="exampleRadios2">
+                                                    Penerima Bantuan
+                                                </label>
+                                            </div>
+                                            <!-- End of Radio -->
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="last_name">Sumber Profail</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="first_name">Kumpulan</label>
+                                            <input class="form-control" id="first_name" type="text" placeholder=" "
+                                                required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Negeri</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Daerah
+                                                Pentadbiran</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Mukim</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">PBT</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label class="my-1 mr-2" for="country">Bandar</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label class="my-1 mr-2" for="country">Parlimen</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="first_name">DUN</label>
+                                            <select class="form-select" id="country"
+                                                aria-label="Default select example">
+                                                <option selected>--</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div><br>
+                                <div class="row">
+
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-file mb-3">
+                                            <input type="file" class="form-file-input" id="customFile">
+                                            <label class="form-file-label" for="customFile">
+                                                <span class="form-file-text">Gambar Ketua Isi Rumah</span>
+                                                <!-- <span class="form-file-button">Cari</span> -->
+                                            </label>
+                                        </div>
+                                        <div class="col text-right">
+                                            <button type="submit" class="btn btn-warning">Muatnaik</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">Nama Ketua Isi Rumah (KIR)</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">No. Kad Pengenalan Baru (KIR)</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col text-right">
+                                        <button type="submit" class="btn btn-warning">Semak No. KP</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">No. Kad Pengenalan Lama (KIR)</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Alamat
+                                                Lengkap</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Taman/Kampung</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Bandar</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div>
+                                            <label for="last_name">Poskod</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">No. Telefon (Tetap)</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label for="last_name">No. H/P</label>
+                                            <input class="form-control" id="last_name" type="text" placeholder=" "
+                                                required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <!-- <p>You are now done.</p> -->
+            <div>
+                <button mat-button (click)="submit()"> Simpan </button>
+                <button mat-button matStepperPrevious> Kembali </button>
+            </div>
+        </mat-step>
+    </mat-horizontal-stepper>
+</div>

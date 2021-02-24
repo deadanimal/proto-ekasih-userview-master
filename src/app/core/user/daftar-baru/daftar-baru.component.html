@@ -1,0 +1,121 @@
+<div class="header pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-xl-12 col-7">
+                    <h6 class="h2 text-dark d-inline-block mb-0"> Daftar Rekod Baru </h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="fas fa-user-alt text-dark"> </i> </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)" class="text-dark"> Profil Bantuan </a>
+                            </li>
+                            <li aria-current="page" class="breadcrumb-item active">
+                                Daftar Rekod Baru
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <!-- <div class="col-lg-6 col-5 text-right">
+					<a class="btn btn-sm btn-default text-white" (click)="openModal(createUser)">
+						Create
+					</a>
+				</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card card-body bg-white border-light shadow-sm mb-4">
+
+                <!-- <h2 class="h5 mb-4">Daftar Rekod Baru</h2> -->
+                <h2 class="h6 mb-2"><u>Profil Saya</u></h2>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label for="first_name">Agensi</label>
+                                <input class="form-control" id="first_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div>
+                                <label for="form-select">Kategori Bantuan</label>
+                                <br>
+                                <select class="form-select mb-0" id="gender" aria-label="Gender select example">
+                                    <option hidden selected>--</option>
+                                    <option value="1">Female</option>
+                                    <option value="2">Male</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-dp" src="assets/img/theme/team-1.jpg" alt="Display Picture">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div>
+                                <label for="first_name">Kod Bantuan</label>
+                                <input class="form-control" id="first_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label for="first_name">Nama Bantuan</label>
+                                <input class="form-control" id="first_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label for="last_name">Bentuk Bantuan</label>
+                                <input class="form-control" id="last_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div>
+                                <label for="first_name">Syarat Permohonan</label>
+                                <input class="form-control" id="first_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label for="first_name">Penyelaras</label>
+                                <input class="form-control" id="first_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div>
+                                <label for="last_name">Agensi Pelaksana</label>
+                                <input class="form-control" id="last_name" type="text" placeholder=" " required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12 mb-3 text-right">
+                            <div>
+                                <button type="submit" class="btn btn-success" (click)="successSwal()">Daftar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
